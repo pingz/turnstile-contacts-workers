@@ -34,7 +34,7 @@
       <p>如果真想联系我，请使用下面的电子邮箱地址。</p>
       
       <!-- Turnstile 验证容器 -->
-      <form id="verify-form" method="POST" action="/verify">
+      <form id="verify-form" method="POST" action="./verify">
 	<div class="cf-turnstile" 
              data-sitekey="TURNSTILE_SITE_KEY" 
              data-callback="onSuccess"></div>
