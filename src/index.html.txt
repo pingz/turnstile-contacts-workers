@@ -47,7 +47,7 @@
     <script>
       function onSuccess(token) {
 	  // 提交表单到 Worker
-	  fetch('/verify', {
+	  fetch('./verify', {
               method: 'POST',
               body: new URLSearchParams({ 'cf-turnstile-response': token })
 	  })
