@@ -6,7 +6,7 @@ export default {
     const url = new URL(request.url);
 
     // 处理验证请求
-    if (request.method === 'POST' && url.pathname === '/verify') {
+    if (request.method === 'POST' && url.pathname.endsWith('/verify')) {
       const formData = await request.formData();
       const token = formData.get('cf-turnstile-response');
       
