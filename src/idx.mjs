@@ -24,7 +24,7 @@ export default {
       if (verifyData.success) {
         // 验证成功，返回邮箱显示 HTML
         return new Response(
-          `<div class="email-display" style="padding: 20px; background: #f0f8ff; border-radius: 8px; font-size: 18px;">
+          `<div class="email-display" style="padding: 20px; background: #808080; border-radius: 8px; font-size: 18px;">
              邮箱地址: <strong>${env.EMAIL_ADDRESS}</strong>
            </div>`,
           { headers: { 'Content-Type': 'text/html' } }
